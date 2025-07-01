@@ -3,7 +3,11 @@
 import React, { useState } from 'react';
 import "./Courses.css"
 
-const routines: Record<string, any[][]> = {
+type RoutineCell = string | { text: string; rowspan?: number; colspan?: number };
+
+type RoutineRow = RoutineCell[];
+
+const routines: Record<string, RoutineRow[]> = {
   "2ND YEAR": [
     ["Day", "09:30 -10:20", "10:20-11:10", "11:10-12:00", "12:00-12:50", "12:50-01:40", "01:40-02:30", "02:30-03:20", "03:20-04:10", "04:10-05:00"],
     [{text:"Monday", rowspan:2}, {text:"ESP IV", colspan:2}, "DM", "COA", {text:"L", rowspan:2}, "DAA", { text: "IT (Gr A): COA Lab (PSP, AK, SSAR, AR) IT Lab 7", colspan: 2 }, {text:"Mentoring", rowspan:10}],
@@ -71,7 +75,13 @@ export default function RoutineCard() {
               <thead>
                 <tr>
                   {routines[selectedYear][0].map((col, idx) => (
-                    <th key={idx}>{col}</th>
+                    <th
+                      key={idx}
+                      colSpan={typeof col === "object" ? col.colspan || 1 : 1}
+                      rowSpan={typeof col === "object" ? col.rowspan || 1 : 1}
+                    >
+                      {typeof col === "object" ? col.text : col}
+                    </th>
                   ))}
                 </tr>
               </thead>

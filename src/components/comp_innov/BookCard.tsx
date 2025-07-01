@@ -5,6 +5,9 @@ import { book_chapter } from "@/lib/dummydata";
 
 type BookType = 'faculty' | 'students';
 
+type HeadingCell = string | { text: string; colspan?: number };
+type BookRow = (string | { text: string; colspan?: number; rowspan?: number })[];
+
 const pubTypes: Record<BookType, string> = {
     faculty: "Faculty Publications",
     students: "Student Publications",
@@ -71,61 +74,41 @@ function BookTable({ type }: TableProps) {
   const data = book_chapter[type];
   if (!data || data.length < 2) return null;
 
-  const [header1, header2, ...rows] = data;
+  const [header1, header2, ...rows] = data as [HeadingCell[], string[], ...BookRow[]];
 
   return (
     <div className="w-full overflow-x-auto mt-4 rounded-md scrollbar-thin scrollbar-thumb-indigo-500 scrollbar-track-indigo-200">
       <table className="w-full min-w-[700px] text-sm sm:text-base border-collapse bg-indigo-100 text-gray-800 shadow-md">
         <thead className="bg-blue-500 text-white">
           <tr>
-            {header1.map((heading: any, idx: number) => (
-              <th
-                key={idx}
-                colSpan={heading.colspan || 1}
-                className="text-center lg:px-4 lg:py-3 px-3 py-2 border border-indigo-600"
-              >
-                {heading.text || heading}
+            {header1.map((heading: HeadingCell, idx: number) => (
+              <th key={idx} colSpan={typeof heading === 'object' ? heading.colspan || 1 : 1}>
+                {typeof heading === 'object' ? heading.text : heading}
               </th>
             ))}
           </tr>
           <tr>
-            {header2.map((heading: any, idx: number) => (
-              <th
-                key={idx}
-                className="text-center lg:px-4 lg:py-3 px-3 py-2 border border-indigo-500"
-              >
-                {heading}
-              </th>
+            {header2.map((heading: string, idx: number) => (
+              <th key={idx}>{heading}</th>
             ))}
           </tr>
         </thead>
         <tbody>
-          {rows.map((row: any[], rowIndex: number) => (
-            <tr
-              key={rowIndex}
-              className={rowIndex % 2 === 0 ? "bg-indigo-200" : "bg-indigo-100"}
-            >
+          {rows.map((row: BookRow, rowIndex: number) => (
+            <tr key={rowIndex}>
               {row.map((cell, cellIndex) => {
-                if (typeof cell === "object" && cell !== null) {
+                if (typeof cell === 'object') {
                   return (
                     <td
                       key={cellIndex}
                       colSpan={cell.colspan || 1}
                       rowSpan={cell.rowspan || 1}
-                      className="text-center lg:px-4 lg:py-3 px-2 py-2 border border-indigo-300 hover:bg-indigo-400 hover:text-white transition-colors"
                     >
                       {cell.text}
                     </td>
                   );
                 } else {
-                  return (
-                    <td
-                      key={cellIndex}
-                      className="text-center lg:px-4 lg:py-3 px-2 py-2 border border-indigo-300 hover:bg-indigo-400 hover:text-white transition-colors"
-                    >
-                      {cell}
-                    </td>
-                  );
+                  return <td key={cellIndex}>{cell}</td>;
                 }
               })}
             </tr>

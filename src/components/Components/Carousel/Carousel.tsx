@@ -3,7 +3,7 @@
 */
 
 import { useEffect, useState, useRef } from "react";
-import { motion, PanInfo, Transition, useMotionValue, useTransform } from "framer-motion";
+import { motion, PanInfo, Transition, useMotionValue, useTransform, MotionValue } from "framer-motion";
 import React, { JSX } from "react";
 import Image from "next/image";
 export interface CarouselItem {
@@ -22,6 +22,8 @@ export interface CarouselProps {
   loop?: boolean;
   round?: boolean;
 }
+
+
 
 const DEFAULT_ITEMS: CarouselItem[] = [
   {
@@ -70,6 +72,71 @@ const SPRING_OPTIONS: Transition = {
 };
 
 const RESET_TRANSITION: Transition = { duration: 0 };
+
+const CarouselCard = ({
+  item,
+  index,
+  x,
+  itemWidth,
+  trackItemOffset,
+  round,
+  transition,
+}: {
+  item: CarouselItem;
+  index: number;
+  x: MotionValue<number>;
+  itemWidth: number;
+  trackItemOffset: number;
+  round: boolean;
+  transition: Transition;
+}) => {
+  const range = [
+    -(index + 1) * trackItemOffset,
+    -index * trackItemOffset,
+    -(index - 1) * trackItemOffset,
+  ];
+  const outputRange = [90, 0, -90];
+  const rotateY = useTransform(x, range, outputRange, { clamp: false });
+
+  return (
+    <motion.div
+      key={index}
+      className={`relative shrink-0 flex flex-col ${
+        round
+          ? "items-center justify-center text-center bg-[#2d0175] border-0"
+          : "items-start justify-between bg-[#7a2fe3] border border-[#850101] rounded-[12px]"
+      } overflow-hidden cursor-grab active:cursor-grabbing`}
+      style={{
+        width: itemWidth,
+        height: round ? itemWidth : "100%",
+        rotateY: rotateY,
+        ...(round && { borderRadius: "50%" }),
+      }}
+      transition={transition}
+    >
+      <div className={`${round ? "p-0 m-0" : "mb-0 p-2"}`}>
+        <Image
+          height={4000}
+          width={6000}
+          src={item.image}
+          alt={item.title}
+          className={`w-full object-cover ${
+            round
+              ? "h-full rounded-full"
+              : "rounded-[12px] h-[200px] sm:h-[250px] md:h-[300px]"
+          }`}
+        />
+      </div>
+      <div className="px-4 pt-2 pb-2">
+        <div className="mb-0.5 font-semibold text-base text-white truncate">
+          {item.title}
+        </div>
+        <p className="text-xs text-white line-clamp-2">{item.description}</p>
+      </div>
+    </motion.div>
+  );
+};
+
 
 export default function Carousel({
   items = DEFAULT_ITEMS,
@@ -201,48 +268,18 @@ export default function Carousel({
         transition={effectiveTransition}
         onAnimationComplete={handleAnimationComplete}
       >
-        {carouselItems.map((item, index) => {
-          const range = [
-            -(index + 1) * trackItemOffset,
-            -index * trackItemOffset,
-            -(index - 1) * trackItemOffset,
-          ];
-          const outputRange = [90, 0, -90];
-          const rotateY = useTransform(x, range, outputRange, { clamp: false });
-          return (
-            <motion.div
-              key={index}
-              className={`relative shrink-0 flex flex-col ${
-                round
-                  ? "items-center justify-center text-center bg-[#2d0175] border-0"
-                  : "items-start justify-between bg-[#7a2fe3] border border-[#850101] rounded-[12px]"
-              } overflow-hidden cursor-grab active:cursor-grabbing`}
-              style={{
-                width: itemWidth,
-                height: round ? itemWidth : "100%",
-                rotateY: rotateY,
-                ...(round && { borderRadius: "50%" }),
-              }}
-              transition={effectiveTransition}
-            >
-              <div className={`${round ? "p-0 m-0" : "mb-0 p-2"}`}>
-                <Image
-                  height={4000}
-                  width={6000}
-                  src={item.image}
-                  alt={item.title}
-                  className={`w-full object-cover ${round ? "h-full rounded-full" : "rounded-[12px] h-[200px] sm:h-[250px] md:h-[300px]"}`}
-                />
-              </div>
-              <div className="px-4 pt-2 pb-2">
-                <div className="mb-0.5 font-semibold text-base text-white truncate">
-                  {item.title}
-                </div>
-                <p className="text-xs text-white line-clamp-2">{item.description}</p>
-              </div>
-            </motion.div>
-          );
-        })}
+        {carouselItems.map((item, index) => (
+          <CarouselCard
+            key={index}
+            item={item}
+            index={index}
+            x={x}
+            itemWidth={itemWidth}
+            trackItemOffset={trackItemOffset}
+            round={round}
+            transition={effectiveTransition}
+          />
+        ))}
       </motion.div>
       <div
         className={`flex w-full justify-center ${

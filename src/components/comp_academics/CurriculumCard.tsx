@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Container, Table } from 'react-bootstrap';
 import './Courses.css';
 
@@ -143,13 +143,6 @@ const syllabusFiles: Record<SemesterType, string> = {
 
 export default function CurriculumCard() {
   const [selectedSem, setSelectedSem] = useState<SemesterType  | null>(null);
-  const [selectedPdf, setSelectedPdf] = useState<string | null>(null);
-  useEffect(() => {
-    if (selectedSem) {
-      setSelectedPdf(syllabusFiles[selectedSem]);  // Update PDF when semester changes
-    }
-  }, [selectedSem]);
-
 
   return (
     <section className="curriculum" id="curriculum-section">
@@ -174,28 +167,49 @@ export default function CurriculumCard() {
               {course_struct[selectedSem]?.struct?.slice(0, 2).map((row, idx) => (
                 <tr key={idx}>
                   {row.map((col, i) => {
-                    const text = typeof col === 'object' ? col.text : col;
-                    return (
-                      <th key={i} colSpan={(col as any)?.colspan || 1} rowSpan={(col as any)?.rowspan || 1}>
-                        {text}
-                      </th>
-                    );
+                    if (typeof col === "object") {
+                      return (
+                        <th key={i} colSpan={col.colspan || 1} rowSpan={col.rowspan || 1}>
+                          {col.text}
+                        </th>
+                      );
+                    } else {
+                      return (
+                        <th key={i} colSpan={1} rowSpan={1}>
+                          {col}
+                        </th>
+                      );
+                    }
                   })}
+
                 </tr>
               ))}
             </thead>
             <tbody>
               {course_struct[selectedSem]?.struct?.slice(2).map((row, idx) => (
-                <tr key={idx} className={(row as any).section ? 'section-row' : idx % 2 === 0 ? 'even-row-c' : 'odd-row-c'}>
+                <tr
+                  key={idx}
+                  className={
+                    row.some(col => typeof col === 'object' && col.section)
+                      ? 'section-row'
+                      : idx % 2 === 0
+                        ? 'even-row-c'
+                        : 'odd-row-c'
+                  }
+                >
                   {row.map((col, i) => {
                     const content = typeof col === 'object' ? col.text : col;
+                    const colSpan = typeof col === 'object' ? col.colspan || 1 : 1;
+                    const rowSpan = typeof col === 'object' ? col.rowspan || 1 : 1;
+
                     const isHeading = ["Theory Papers", "Practical Papers", "Sessional Papers", "Mandatory Requirements"].includes(String(content));
-                    const isTotal = typeof col === 'object' && col.text.includes("Total");
+                    const isTotal = typeof content === 'string' && content.includes("Total");
+
                     return (
                       <td
                         key={i}
-                        colSpan={(col as any)?.colspan || 1}
-                        rowSpan={(col as any)?.rowspan || 1}
+                        colSpan={colSpan}
+                        rowSpan={rowSpan}
                         className={isHeading ? 'section-heading' : isTotal ? 'highlight-total' : ''}
                       >
                         {content}
@@ -214,31 +228,56 @@ export default function CurriculumCard() {
                 <thead>
                   {course_struct[selectedSem].elective?.slice(0, 1).map((row, idx) => (
                     <tr key={idx}>
-                      {row.map((col, i) => (
-                        <th key={i} colSpan={(col as any)?.colspan || 1} rowSpan={(col as any)?.rowspan || 1}>
-                          {typeof col === 'object' ? col.text : col}
-                        </th>
-                      ))}
+                      {row.map((col, i) => {
+                        if (typeof col === "object") {
+                          return (
+                            <th key={i} colSpan={col.colspan || 1} rowSpan={col.rowspan || 1}>
+                              {col.text}
+                            </th>
+                          );
+                        } else {
+                          return (
+                            <th key={i} colSpan={1} rowSpan={1}>
+                              {col}
+                            </th>
+                          );
+                        }
+                      })}
                     </tr>
                   ))}
                 </thead>
                 <tbody>
                   {course_struct[selectedSem].elective?.slice(1).map((row, idx) => (
-                    <tr key={idx} className={(row as any).section ? 'section-row' : idx % 2 === 0 ? 'even-row-c' : 'odd-row-c'}>
+                    <tr
+                      key={idx}
+                      className={
+                        row.some(col => typeof col === 'object' && col.section)
+                          ? 'section-row'
+                          : idx % 2 === 0
+                            ? 'even-row-c'
+                            : 'odd-row-c'
+                      }
+                    >
                       {row.map((col, i) => {
                         const content = typeof col === 'object' ? col.text : col;
-                        const isBtech = typeof content === 'string' && content.includes("B.Tech");
+                        const colSpan = typeof col === 'object' ? col.colspan || 1 : 1;
+                        const rowSpan = typeof col === 'object' ? col.rowspan || 1 : 1;
+
+                        const isHeading = ["Theory Papers", "Practical Papers", "Sessional Papers", "Mandatory Requirements"].includes(String(content));
+                        const isTotal = typeof content === 'string' && content.includes("Total");
+
                         return (
                           <td
                             key={i}
-                            colSpan={(col as any)?.colspan || 1}
-                            rowSpan={(col as any)?.rowspan || 1}
-                            className={isBtech ? "highlight-Btech" : ""}
+                            colSpan={colSpan}
+                            rowSpan={rowSpan}
+                            className={isHeading ? 'section-heading' : isTotal ? 'highlight-total' : ''}
                           >
                             {content}
                           </td>
                         );
                       })}
+
                     </tr>
                   ))}
                 </tbody>
