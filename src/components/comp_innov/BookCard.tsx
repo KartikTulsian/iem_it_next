@@ -82,33 +82,52 @@ function BookTable({ type }: TableProps) {
         <thead className="bg-blue-500 text-white">
           <tr>
             {header1.map((heading: HeadingCell, idx: number) => (
-              <th key={idx} colSpan={typeof heading === 'object' ? heading.colspan || 1 : 1}>
+              <th
+                key={idx} colSpan={typeof heading === 'object' ? heading.colspan || 1 : 1}
+                className="text-center lg:px-4 lg:py-3 px-3 py-2 border border-indigo-600"
+              >
                 {typeof heading === 'object' ? heading.text : heading}
               </th>
             ))}
           </tr>
           <tr>
             {header2.map((heading: string, idx: number) => (
-              <th key={idx}>{heading}</th>
+              <th
+                key={idx}
+                className="text-center lg:px-4 lg:py-3 px-3 py-2 border border-indigo-500"
+              >
+                {heading}
+              </th>
             ))}
           </tr>
         </thead>
         <tbody>
           {rows.map((row: BookRow, rowIndex: number) => (
-            <tr key={rowIndex}>
+            <tr
+              key={rowIndex}
+              className={rowIndex % 2 === 0 ? "bg-indigo-200" : "bg-indigo-100"}
+            >
               {row.map((cell, cellIndex) => {
-                if (typeof cell === 'object') {
+                if (typeof cell === "object") {
                   return (
                     <td
                       key={cellIndex}
                       colSpan={cell.colspan || 1}
                       rowSpan={cell.rowspan || 1}
+                      className="text-center lg:px-4 lg:py-3 px-2 py-2 border border-indigo-300 hover:bg-indigo-400 hover:text-white transition-colors"
                     >
                       {cell.text}
                     </td>
                   );
                 } else {
-                  return <td key={cellIndex}>{cell}</td>;
+                  return (
+                    <td
+                      key={cellIndex}
+                      className="text-center lg:px-4 lg:py-3 px-2 py-2 border border-indigo-300 hover:bg-indigo-400 hover:text-white transition-colors"
+                    >
+                      {cell}
+                    </td>
+                  );
                 }
               })}
             </tr>
