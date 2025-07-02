@@ -31,7 +31,7 @@ export default function StudChapterCard() {
         <div className="flex flex-col lg:flex-row lg:items-start lg:gap-10">
           <div className="w-full lg:w-1/2 mb-6 lg:mb-0">
             <Image
-              src="/images/iem_iete/iem-iete.jpg"
+              src="/images/iem-icdc/icdc.png"
               alt="IEM IETE Forum"
               width={1600}
               height={900}
