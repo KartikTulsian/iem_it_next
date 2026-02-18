@@ -158,12 +158,24 @@ const FacultyTree: React.FC<FacultyTreeProps> = ({ facultyData, onSelect }) => {
 
 // Modal for mentor info
 const MentorModal: React.FC<MentorModalProps> = ({ mentor, onClose }) => {
+  useEffect(() => {
+    if (mentor) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    // Cleanup function to restore scroll when component unmounts
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [mentor]);
+
   if (!mentor) return null;
 
   return (
     <div className="mentor-modal" onClick={onClose}>
       <div
-        className="mentor-modal-content flex flex-col md:flex-row w-[90%] max-w-[900px] max-h-[80vh] overflow-y-hidden bg-gradient-to-br from-[#fff] to-gray-50 lg:border-4 lg:border-[#7a2fe3] md:border-4 md:border-[#7a2fe3] rounded-xl p-8"
+        className="mentor-modal-content flex flex-col md:flex-row w-[90%] max-w-[900px] max-h-[80vh] overflow-y-auto overscroll-contain bg-gradient-to-br from-[#fff] to-gray-50 lg:border-4 lg:border-[#7a2fe3] md:border-4 md:border-[#7a2fe3] rounded-xl p-8"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Image - Hidden on small screens */}
