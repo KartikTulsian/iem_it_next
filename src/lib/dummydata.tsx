@@ -701,17 +701,17 @@ export const itprogfaculty = {
       img: "/images/teachers/baishakhi_das.png",
     },
   ],
-  incharge2: [
-    {
-      id: "2",
-      title: "Prof. Dr. Subhabrata Sengupta",
-      desg: "Assistant Program Incharge",
-      linkedin: "https://www.linkedin.com/in/subhabrata-sengupta-97308526b/",
-      gscholar:
-        "https://scholar.google.co.in/citations?hl=en&user=uctyfpEAAAAJ",
-      img: "/images/teachers/ssg.png",
-    },
-  ],
+  // incharge2: [
+  //   {
+  //     id: "2",
+  //     title: "Prof. Dr. Subhabrata Sengupta",
+  //     desg: "Assistant Program Incharge",
+  //     linkedin: "https://www.linkedin.com/in/subhabrata-sengupta-97308526b/",
+  //     gscholar:
+  //       "https://scholar.google.co.in/citations?hl=en&user=uctyfpEAAAAJ",
+  //     img: "/images/teachers/ssg.png",
+  //   },
+  // ],
 };
 
 export const mentorsList = {
@@ -987,39 +987,39 @@ export const mentorsList = {
     },
   ],
   assi_prof: [
+    // {
+    //   id: "as-1",
+    //   title: "Prof. Dr. Subhabrata Sengupta",
+    //   desg: "Assistant Professor",
+    //   linkedin: "https://www.linkedin.com/in/subhabrata-sengupta-97308526b/",
+    //   gscholar:
+    //     "https://scholar.google.co.in/citations?hl=en&user=uctyfpEAAAAJ",
+    //   img: "/images/teachers/ssg.png",
+    //   mentees: {
+    //     "2ND YEAR IT BATCH 24-28": [
+    //       [12024052004009, 4, "PARBONI MITRA"],
+    //       [120240520104020, 23, "SAMRIDDHI SENGUPTA"],
+    //       [12024053004036, 38, "RISHI AGARWAL"],
+    //       [12024053004052, 55, "RITIKA GUPTA"],
+    //       [12024052004069, 72, "AYUSHMAN SAHA"],
+    //       [12024052004075, 78, "ESHA DAS"],],
+    //     "3RD YEAR IT BATCH 23-27": [
+    //       [12023052004004, 4, "DEBAYAN DE"],
+    //       [12023052004020, 20, "PRAROOP ANAND"],
+    //       [12023052004036, 36, "KARTIK TULSIAN"],
+    //       [12023052004052, 52, "ESHITA TALUKDAR"],
+    //       [12023052004068, 68, "ABHIJEET KUMAR"],
+    //     ],
+    //     "4TH YEAR IT BATCH 22-26": [
+    //       [12022002004009, 5, "SOMBIT BISWAS"],
+    //       [12022002004036, 24, "SHIVAM  KUMAR"],
+    //       [12022002004057, 43, "DEBARATI  NANDI"],
+    //       [12022002004077, 62, "ARNAB  NAYAK"]
+    //     ],
+    //   },
+    // },
     {
       id: "as-1",
-      title: "Prof. Dr. Subhabrata Sengupta",
-      desg: "Assistant Professor",
-      linkedin: "https://www.linkedin.com/in/subhabrata-sengupta-97308526b/",
-      gscholar:
-        "https://scholar.google.co.in/citations?hl=en&user=uctyfpEAAAAJ",
-      img: "/images/teachers/ssg.png",
-      mentees: {
-        "2ND YEAR IT BATCH 24-28": [
-          [12024052004009, 4, "PARBONI MITRA"],
-          [120240520104020, 23, "SAMRIDDHI SENGUPTA"],
-          [12024053004036, 38, "RISHI AGARWAL"],
-          [12024053004052, 55, "RITIKA GUPTA"],
-          [12024052004069, 72, "AYUSHMAN SAHA"],
-          [12024052004075, 78, "ESHA DAS"],],
-        "3RD YEAR IT BATCH 23-27": [
-          [12023052004004, 4, "DEBAYAN DE"],
-          [12023052004020, 20, "PRAROOP ANAND"],
-          [12023052004036, 36, "KARTIK TULSIAN"],
-          [12023052004052, 52, "ESHITA TALUKDAR"],
-          [12023052004068, 68, "ABHIJEET KUMAR"],
-        ],
-        "4TH YEAR IT BATCH 22-26": [
-          [12022002004009, 5, "SOMBIT BISWAS"],
-          [12022002004036, 24, "SHIVAM  KUMAR"],
-          [12022002004057, 43, "DEBARATI  NANDI"],
-          [12022002004077, 62, "ARNAB  NAYAK"]
-        ],
-      },
-    },
-    {
-      id: "as-2",
       title: "Prof. Kajari Sur",
       desg: "Assistant Professor",
       linkedin: "https://www.linkedin.com/in/kajari-sur-98a97156/",
@@ -1049,7 +1049,7 @@ export const mentorsList = {
       },
     },
     {
-      id: "as-3",
+      id: "as-2",
       title: "Prof. Dr. Avijit Bose",
       desg: "Assistant Professor",
       linkedin: "https://www.linkedin.com/in/avijit-bose-29328977/",
@@ -1084,7 +1084,7 @@ export const mentorsList = {
       },
     },
     {
-      id: "as-4",
+      id: "as-3",
       title: "Prof. Swagatam Basu",
       desg: "Assistant Professor",
       linkedin: "https://www.linkedin.com/in/swagatam-basu-61875bb6/",
@@ -1112,7 +1112,7 @@ export const mentorsList = {
       },
     },
     {
-      id: "as-5",
+      id: "as-4",
       title: "Prof. Rabi Narayan Behera",
       desg: "Assistant Professor",
       linkedin: "https://www.linkedin.com/in/rabi-behera-5b814154/",
@@ -1142,7 +1142,7 @@ export const mentorsList = {
       },
     },
     {
-      id: "as-6",
+      id: "as-5",
       title: "Prof. Dr. Amit Kumar Mandal",
       desg: "Assistant Professor",
       linkedin: "",
@@ -1159,7 +1159,7 @@ export const mentorsList = {
       }
     },
     {
-      id: "as-7",
+      id: "as-6",
       title: "Prof. Dr. Avipsita Chatterjee",
       desg: "Assistant Professor",
       linkedin: "https://www.linkedin.com/in/dr-avipsita-chatterjee-630b35323/",
@@ -1187,7 +1187,7 @@ export const mentorsList = {
       },
     },
     {
-      id: "as-8",
+      id: "as-7",
       title: "Prof Pulak Baral",
       desg: "Assistant Professor",
       linkedin: "https://www.linkedin.com/in/pulak-baral-249aaa27b/",
@@ -1219,7 +1219,7 @@ export const mentorsList = {
       },
     },
     {
-      id: "as-9",
+      id: "as-8",
       title: "Prof. Subindu Saha",
       desg: "Assistant Professor",
       linkedin: "https://www.linkedin.com/in/subindu-saha-506b697a/",
@@ -1250,7 +1250,7 @@ export const mentorsList = {
       },
     },
     {
-      id: "as-10",
+      id: "as-9",
       title: "Prof. Partha Sarathi Paul",
       desg: "IT Professor",
       linkedin: "https://www.linkedin.com/in/partha-sarathi-paul-58a929325/",
@@ -1353,16 +1353,16 @@ export const itfaculty = {
     },
   ],
   assi_prof: [
+    // {
+    //   id: "as-1",
+    //   title: "Prof. Dr. Subhabrata Sengupta",
+    //   desg: "Assistant Professor",
+    //   linkedin: "https://www.linkedin.com/in/subhabrata-sengupta-97308526b/",
+    //   gscholar: "https://scholar.google.co.in/citations?hl=en&user=uctyfpEAAAAJ",
+    //   img: "/images/teachers/ssg.png",
+    // },
     {
       id: "as-1",
-      title: "Prof. Dr. Subhabrata Sengupta",
-      desg: "Assistant Professor",
-      linkedin: "https://www.linkedin.com/in/subhabrata-sengupta-97308526b/",
-      gscholar: "https://scholar.google.co.in/citations?hl=en&user=uctyfpEAAAAJ",
-      img: "/images/teachers/ssg.png",
-    },
-    {
-      id: "as-2",
       title: "Prof. Kajari Sur",
       desg: "Assistant Professor",
       linkedin: "https://www.linkedin.com/in/kajari-sur-98a97156/",
@@ -1370,7 +1370,7 @@ export const itfaculty = {
       img: "/images/teachers/kajori_sur.png",
     },
     {
-      id: "as-3",
+      id: "as-2",
       title: "Prof. Dr. Avijit Bose",
       desg: "Assistant Professor",
       linkedin: "https://www.linkedin.com/in/avijit-bose-29328977/",
@@ -1378,7 +1378,7 @@ export const itfaculty = {
       img: "/images/teachers/avijit_bose.png",
     },
     {
-      id: "as-4",
+      id: "as-3",
       title: "Prof. Swagatam Basu",
       desg: "Assistant Professor",
       linkedin: "https://www.linkedin.com/in/swagatam-basu-61875bb6/",
@@ -1386,7 +1386,7 @@ export const itfaculty = {
       img: "/images/teachers/swagatam_basu.png",
     },
     {
-      id: "as-5",
+      id: "as-4",
       title: "Prof. Rabi Narayan Behera",
       desg: "Assistant Professor",
       linkedin: "https://www.linkedin.com/in/rabi-behera-5b814154/",
@@ -1394,7 +1394,7 @@ export const itfaculty = {
       img: "/images/teachers/ravi_behera.png",
     },
     {
-      id: "as-6",
+      id: "as-5",
       title: "Prof. Dr. Amit Kumar Mandal",
       desg: "Assistant Professor",
       linkedin: "",
@@ -1402,7 +1402,7 @@ export const itfaculty = {
       img: "/images/teachers/amit_kumar.png",
     },
     {
-      id: "as-7",
+      id: "as-6",
       title: "Prof. Dr. Avipsita Chatterjee",
       desg: "Assistant Professor",
       linkedin: "https://www.linkedin.com/in/dr-avipsita-chatterjee-630b35323/",
@@ -1410,7 +1410,7 @@ export const itfaculty = {
       img: "/images/teachers/avipsita_chat.png",
     },
     {
-      id: "as-8",
+      id: "as-7",
       title: "Prof Pulak Baral",
       desg: "Assistant Professor",
       linkedin: "https://www.linkedin.com/in/pulak-baral-249aaa27b/",
@@ -1418,7 +1418,7 @@ export const itfaculty = {
       img: "/images/teachers/pulak_baral.png",
     },
     {
-      id: "as-9",
+      id: "as-8",
       title: "Prof. Subindu Saha",
       desg: "Assistant Professor",
       linkedin: "https://www.linkedin.com/in/subindu-saha-506b697a/",
@@ -1426,7 +1426,7 @@ export const itfaculty = {
       img: "/images/teachers/subindu_saha.jpg",
     },
     {
-      id: "as-10",
+      id: "as-9",
       title: "Prof. Partha Sarathi Paul",
       desg: "Assistant Professor",
       linkedin: "https://www.linkedin.com/in/partha-sarathi-paul-58a929325/",
@@ -1434,7 +1434,7 @@ export const itfaculty = {
       img: "/images/teachers/partha_sarthi.png",
     },
     {
-      id: "as-11",
+      id: "as-10",
       title: "Prof. Mohua Ghosh",
       desg: "Assistant Professor",
       linkedin: "https://www.linkedin.com/in/sudipta-bhuyan-076764229/",
@@ -1442,7 +1442,7 @@ export const itfaculty = {
       img: "/images/teachers/mohua_ghosh.png",
     },
     {
-      id: "as-12",
+      id: "as-11",
       title: "Prof. Shreyashi Dutta",
       desg: "Assistant Professor",
       linkedin: "https://www.linkedin.com/in/shreyasi-datta-475b1599/",
@@ -1450,7 +1450,7 @@ export const itfaculty = {
       img: "/images/teachers/shreyashi_dutta.jpeg",
     },
     {
-      id: "as-13",
+      id: "as-12",
       title: "Prof. Partha Bhattacharya",
       desg: "Assistant Professor",
       linkedin: "",
@@ -1458,7 +1458,7 @@ export const itfaculty = {
       img: "/images/teachers/partha_bhata.png",
     },
     {
-      id: "as-14",
+      id: "as-13",
       title: "Prof. Aditya Ray",
       desg: "Assistant Professor",
       linkedin: "",
