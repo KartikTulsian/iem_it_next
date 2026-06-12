@@ -701,17 +701,17 @@ export const itprogfaculty = {
       img: "/images/teachers/baishakhi_das.png",
     },
   ],
-  incharge2: [
-    {
-      id: "2",
-      title: "Prof. Subhabrata Sengupta",
-      desg: "Assistant Program Incharge",
-      linkedin: "https://www.linkedin.com/in/subhabrata-sengupta-97308526b/",
-      gscholar:
-        "https://scholar.google.co.in/citations?hl=en&user=uctyfpEAAAAJ",
-      img: "/images/teachers/ssg.png",
-    },
-  ],
+  // incharge2: [
+  //   {
+  //     id: "2",
+  //     title: "Prof. Dr. Subhabrata Sengupta",
+  //     desg: "Assistant Program Incharge",
+  //     linkedin: "https://www.linkedin.com/in/subhabrata-sengupta-97308526b/",
+  //     gscholar:
+  //       "https://scholar.google.co.in/citations?hl=en&user=uctyfpEAAAAJ",
+  //     img: "/images/teachers/ssg.png",
+  //   },
+  // ],
 };
 
 export const mentorsList = {
@@ -725,19 +725,14 @@ export const mentorsList = {
         "https://scholar.google.co.in/citations?hl=en&user=ME3Wtb0AAAAJ",
       img: "/images/hod_img.jpg",
       mentees: {
-        "2ND YEAR IT BATCH 23-27": [[12023052004001, 1, "ADRIKA KUNDU"]],
-        "3RD YEAR IT BATCH 22-26": [
+        "2ND YEAR IT BATCH 24-28": [[12024052004078, 1, "FARHAN ABID ALI"]],
+        "3RD YEAR IT BATCH 23-27": [[12023052004001, 1, "ADRIKA KUNDU"]],
+        "4TH YEAR IT BATCH 22-26": [
           [12022002004001, 1, "MD REHAN"],
           [12022002004030, 20, "PRATIK RAJ"],
           [12022002004052, 39, "MOHINI GHOSH"],
           [12022002004072, 58, "KUNTAL BHATTACHARJEE"],
         ],
-        "4TH YEAR IT BATCH 21-25": [
-          [12021002003007, 1, "DEVADITYA ROY"],
-          [12021002004051, 23, "ABHIRUP GHOSH"],
-          [12021002020024, 45, "SUBHAM SINGH"],
-          [12021002011033, 73, "PRATHAM OJHA"]
-        ]
       },
     },
   ],
@@ -751,27 +746,26 @@ export const mentorsList = {
         "https://scholar.google.co.in/citations?hl=en&user=yiJnfpsAAAAJ",
       img: "/images/teachers/sanchita_ghosh.png",
       mentees: {
-        "2ND YEAR IT BATCH 23-27": [
+        "2ND YEAR IT BATCH 24-28": [
+          [12024052004001, 2, "SURANJANA MAJUMDAR"],
+          [12024652004034, 36, "SARFARAJ HAQUE"],
+          [121024052004150, 52, "SWASTIK GHOSH"],
+          [12024052004018, 19, "DEBOPRIYA RAKSHIT"],
+          [12024052004067, 70, "SOUMADEEP CHATTERJEE"]],
+        "3RD YEAR IT BATCH 23-27": [
           [12023052004003, 3, "AYUSHMAN GHOSH"],
           [12023052004019, 19, "PARTHIB MAHAPATRA"],
           [12023052004035, 35, "DEBOSMITA GHOSH"],
           [12023052004051, 51, "CHIRAG SANGHI"],
           [12023052004067, 67, "UTKARSHA GHOSH"],
         ],
-        "3RD YEAR IT BATCH 22-26": [
+        "4TH YEAR IT BATCH 22-26": [
           [12022002004007, 3, "SNEHA GIRI"],
           [12022002004008, 4, "KESHAV BHARDWAJ"],
           [12022002004035, 23, "VISHAL KUMAR"],
           [12022002004056, 42, "AMLAN DAS"],
           [12022002004076, 61, "MRIGANKA MONDAL"]
         ],
-        "4TH YEAR IT BATCH 21-25": [
-          [12021002004001, 3, "NEHA SINGH"],
-          [12021002004012, 5, "SOUVIK SARKAR"],
-          [12021002004054, 26, "ARPAN CHOWDHURY"],
-          [22022002004002, 48, "SOURAV ROY"],
-          [12021002019008, 76, "RAPTI SAHA"]
-        ]
       },
     },
     {
@@ -783,25 +777,26 @@ export const mentorsList = {
         "https://scholar.google.co.in/citations?hl=en&user=IlSv4TkAAAAJ",
       img: "/images/teachers/baishakhi_das.png",
       mentees: {
-        "2ND YEAR IT BATCH 23-27": [
+        "2ND YEAR IT BATCH 24-28": [
+          [12024052004002, 3, "ABHIRUP PAL"],
+          [1202405200419, 20, "PRIHA RAKSHIT"],
+          [12024652004035, 37, "UJJWAL KANT"],
+          [12024052004051, 54, "NILABHO CHATTERJEE"],
+          [12024052004068, 71, "SAMPURNA RAKSHIT"]],
+
+        "3RD YEAR IT BATCH 23-27": [
           [12023052004002, 2, "ANUSHKA SINGH"],
           [12023052004018, 18, "NAMAN KEJRIWAL"],
           [12023052004034, 34, "BIJAY MONDAL"],
           [12023052004050, 50, "AUNGSHUSMITA DASGUPTA"],
           [12023052004066, 66, "TANVI JESMI"],
         ],
-        "3RD YEAR IT BATCH 22-26": [
+        "4TH YEAR IT BATCH 22-26": [
           [12022002004003, 2, "SHASHWAT KUMAR"],
           [12022002004032, 21, "MD  ASIFULAMEEN"],
           [12022002004054, 40, "DIPTYANIL  BASAK"],
           [12022002004073, 59, "ABHIGYAN  KULAVI"]
         ],
-        "4TH YEAR IT BATCH 21-25": [
-          [12021002003109, 2, "ARKODEEP BANIK"],
-          [12021002004052, 24, "ANKIT KUMAR RAI"],
-          [12021002004057, 46, "SHEK DIYA SARKAR"],
-          [12021002018063, 74, "ARKA PRABHA BISWAS"]
-        ]
       },
     },
   ],
@@ -815,26 +810,25 @@ export const mentorsList = {
         "https://scholar.google.co.in/citations?hl=en&user=xpDd_BUAAAAJ",
       img: "/images/teachers/rupayan_das.png",
       mentees: {
-        "2ND YEAR IT BATCH 23-27": [
+        "2ND YEAR IT BATCH 24-28": [
+          [12024052004006, 9, "SRIJA BANERJEE"],
+          [12024052004024, 26, "SHREYA SINHA"],
+          [12024052004041, 43, "ASMITA CHOWDHURY"],
+          [12024052004057, 60, "NEHA SAHA"],
+          [12024053004074, 77, "MD YAMAN YUSUF"],],
+        "3RD YEAR IT BATCH 23-27": [
           [12023052004012, 12, "JIYA BHATI"],
           [12023052004028, 28, "ANJAN SUMAN"],
           [12023052004044, 44, "SWADESH MONDAL"],
           [12023052004060, 60, "SOUMILI MUKHERJEE"],
           [12023052004076, 76, "SHRUTI KUMARI"],
         ],
-        "3RD YEAR IT BATCH 22-26": [
+        "4TH YEAR IT BATCH 22-26": [
           [12022002004018, 12, "MRIDUL PATRA"],
           [12022002004026, 19, "DEBOJYOTI MONDAL"],
           [12022002004051, 38, "KOUNAK DATTA"],
           [12022002004071, 57, "PRATYUSH  KUMAR TIWARY"]
         ],
-        "4TH YEAR IT BATCH 21-25": [
-          [12021002004045, 22, "REBANTA BERA"],
-          [12021002020010, 44, "PANKAJ KUMAR AGARWAL"],
-          [22022002004018, 64, "SAIKAT MUKHERJEE"],
-          [22022002004024, 71, "SOUMYA CHATTERJEE"],
-          [22022002004026, 72, "SUBHAM DUTTA"]
-        ]
       },
     },
     {
@@ -846,25 +840,28 @@ export const mentorsList = {
         "https://scholar.google.co.in/citations?user=dk2zK8IAAAAJ&hl=en",
       img: "/images/teachers/susovan_jana.png",
       mentees: {
-        "2ND YEAR IT BATCH 23-27": [
+        "2ND YEAR IT BATCH 24-28": [
+          [12024052004006, 7, "JIGISHA NAG"],
+          [121240520041122, 24, "ANUSKA NAYAK"],
+          [12024052004039, 41, "SUMAN KUNDU"],
+          [12024052004055, 58, "RICHEEK BOSE"],
+          [12024052004072, 75, "ARIJIT DEB"]],
+
+
+        "3RD YEAR IT BATCH 23-27": [
           [12023052004006, 6, "DHRITIMAN BERA"],
           [12023052004022, 22, "RISAV RAKSHIT"],
           [12023052004038, 38, "RAHUL ARYAN"],
           [12023052004054, 54, "KOUSHOR CHOUDHURY"],
           [12023052004070, 70, "ARKA CHAKRABORTY"],
         ],
-        "3RD YEAR IT BATCH 22-26": [
+        "4TH YEAR IT BATCH 22-26": [
           [12022002004013, 7, "SAMINA AHMAD"],
           [12022002004034, 22, "SAUMYA RAJ"],
           [12022002004038, 26, "SOUVIK MUKHOPADHYAY"],
           [12022002004059, 45, "SOUMYADIP SAHA"],
           [12022002004070, 56, "TANMOY SAHA"]
         ],
-        "4TH YEAR IT BATCH 21-25": [
-          [12021002004021, 9, "SAGNIK AICH"],
-          [12021002004058, 30, "MUHIBBUR RAHMAN"],
-          [22022002004006, 52, "SOUMYAJIT KUNDU"]
-        ]
       },
     },
     {
@@ -875,24 +872,27 @@ export const mentorsList = {
       gscholar: "https://scholar.google.co.in/citations?user=RQLNn8UAAAAJ",
       img: "/images/teachers/soumadip_biswas.png",
       mentees: {
-        "2ND YEAR IT BATCH 23-27": [
+
+        "2ND YEAR IT BATCH 24-28": [
+          [12024052004007, 8, "BAIDURYA KUMAR CHOUDHURY"], [12024052004023, 25, "SHRUTI KUMARI"],
+          [12024052004040, 42, "SAPTAK DASGUPTA"],
+          [12024052004156, 59, "SHREYA ADHIKARY"],
+          [12024053004073, 76, "DEBARGHYA CHOUDHURY"]
+        ],
+
+
+        "3RD YEAR IT BATCH 23-27": [
           [12023052004007, 7, "DIGANTA DEB"],
           [12023052004023, 23, "SINJAN CHATTERJEE"],
           [12023052004039, 39, "RUDRAKSH RANA"],
           [12023052004055, 55, "MD ANSARI"],
           [12023052004071, 71, "AYUSH AMAN"],
         ],
-        "3RD YEAR IT BATCH 22-26": [
+        "4TH YEAR IT BATCH 22-26": [
           [12022002004014, 8, "KUMAR OM"],
           [12022002004039, 27, "GOUR ROYCHOWDHURY"],
           [12022002004060, 46, "ARKAPRABHA DUTTA"]
         ],
-        "4TH YEAR IT BATCH 21-25": [
-          [12021002004022, 10, "SOUMENDU TARAFDAR"],
-          [12021002004059, 31, "NISHI KUMARI"],
-          [22022002004007, 53, "TANOY PAUL"],
-          [22022002018019, 42, "ANUPAM TIWARY"]
-        ]
       },
     },
     {
@@ -904,14 +904,20 @@ export const mentorsList = {
         "https://scholar.google.co.in/citations?hl=en&user=BJctPj8AAAAJ",
       img: "/images/teachers/kaushik_dutta.png",
       mentees: {
-        "2ND YEAR IT BATCH 23-27": [
+        "2ND YEAR IT BATCH 24-28": [
+          [12024052004011, 12, "ANKUR MUKHERJEE"],
+          [12024052004027, 29, "TRINANJAN DAS"],
+          [12024052004044, 46, "RHITAM BISWAS"],
+          [12024052004060, 63, "SURANJAN KUILA"],
+          [120240520041177, 80, "AMIT DUTTA"],],
+        "3RD YEAR IT BATCH 23-27": [
           [12023052004011, 11, "HARSHBARDHAN RAJ"],
           [12023052004027, 27, "ANISH CHATTERJEE"],
           [12023052004043, 43, "SOUMYA"],
           [12023052004059, 59, "SHUBHAM KUMAR"],
           [12023052004075, 75, "SAYAN CHOWDHURY"],
         ],
-        "3RD YEAR IT BATCH 22-26": [
+        "4TH YEAR IT BATCH 22-26": [
           [12022002004023, 16, "SHINJAN CHOWDHURY"],
           [12022002004048, 35, "SAYAN  BARDHAN"],
           [12022002004055, 41, "SWAPNANIL  ADHIKARY"],
@@ -919,10 +925,6 @@ export const mentorsList = {
           [12022002018039, 64, "ADITYA KUMAR"],
           [12022002018037, 65, "ANIMESH PALUI"]
         ],
-        "4TH YEAR IT BATCH 21-25": [
-          [12021002004036, 18, "KOUSTAV MANDAL"],
-          [12021002004068, 40, "SAGNIK MUNSHI"]
-        ]
       },
     },
     {
@@ -934,20 +936,24 @@ export const mentorsList = {
         "https://scholar.google.co.in/citations?hl=en&user=VWV3V9kAAAAJ",
       img: "/images/teachers/sudipta_bhuiya.png",
       mentees: {
-        "2ND YEAR IT BATCH 23-27": [
+        "2ND YEAR IT BATCH 24-28": [
+          [12024652004012, 13, "AKASH PAL"],
+          [12024052004028, 30, "ANSH VERMA"],
+          [12024052004045, 47, "ANSHUMAN KAR"],
+          [12024052004061, 64, "SULAGNA GHOSH"],],
+
+
+        "3RD YEAR IT BATCH 23-27": [
           [12023052004016, 16, "NABAMITA SARKAR"],
           [12023052004032, 32, "ANKIT KUMAR"],
           [12023052004048, 48, "SHREYA GHOSH"],
           [12023052004064, 64, "SUDIP PAUL"],
           [12023052004080, 80, "TANISHQ SINGH"],
         ],
-        "3RD YEAR IT BATCH 22-26": [
+        "4TH YEAR IT BATCH 22-26": [
           [12022002003176, 66, "SAHIL GHOSH"],
           [12022002003213, 67, "SUMITA KUMARI JHA"]
         ],
-        "4TH YEAR IT BATCH 21-25": [
-          [22022002004015, 61, "VISHAL KUMAR CHANDRABANSHI"]
-        ]
       },
     },
     {
@@ -959,102 +965,107 @@ export const mentorsList = {
         "https://scholar.google.co.in/citations?hl=en&user=GUIKqbEAAAAJ",
       img: "/images/teachers/soumendu_shekhar.png",
       mentees: {
-        "2ND YEAR IT BATCH 23-27": [
+        "2ND YEAR IT BATCH 24-28": [
+          [12024052004010, 11, "SRIJITA GHOSH"],
+          [12024052004026, 28, "RITWIKA BANERJEE"],
+          [12024052004043, 45, "AARANYAK HALDER"],
+          [12024052004099, 62, "DIYALI DAS"],
+          [12024052004076, 79, "MASUMA AKHTER"],],
+        "3RD YEAR IT BATCH 23-27": [
           [12023052004013, 13, "KANKANA BHAUMIK"],
           [12023052004029, 29, "ANKIT SHAW"],
           [12023052004045, 45, "AAYUSH RAJ"],
           [12023052004061, 61, "SOUNAK SEN"],
           [12023052004077, 77, "SNEHAL SHANU"],
         ],
-        "3RD YEAR IT BATCH 22-26": [
+        "4TH YEAR IT BATCH 22-26": [
           [12022002004024, 17, "SUMIT KUMAR"],
           [12022002004049, 36, "ARSHIYA  NANDY"],
           [12022002004069, 55, "PINAKI  DUTTA"]
         ],
-        "4TH YEAR IT BATCH 21-25": [
-          [12021002004037, 19, "KINJAL KOLAY"],
-          [12021002011062, 41, "TUHINA MONDAL"],
-          [22022002004016, 62, "SAYAK PAUL"],
-          [22022002004025, 70, "BIKRAM HAZRA"],
-          [12021002003034, 75, "SUBHAM BURMAN"]
-        ]
       },
     },
   ],
   assi_prof: [
+    // {
+    //   id: "as-1",
+    //   title: "Prof. Dr. Subhabrata Sengupta",
+    //   desg: "Assistant Professor",
+    //   linkedin: "https://www.linkedin.com/in/subhabrata-sengupta-97308526b/",
+    //   gscholar:
+    //     "https://scholar.google.co.in/citations?hl=en&user=uctyfpEAAAAJ",
+    //   img: "/images/teachers/ssg.png",
+    //   mentees: {
+    //     "2ND YEAR IT BATCH 24-28": [
+    //       [12024052004009, 4, "PARBONI MITRA"],
+    //       [120240520104020, 23, "SAMRIDDHI SENGUPTA"],
+    //       [12024053004036, 38, "RISHI AGARWAL"],
+    //       [12024053004052, 55, "RITIKA GUPTA"],
+    //       [12024052004069, 72, "AYUSHMAN SAHA"],
+    //       [12024052004075, 78, "ESHA DAS"],],
+    //     "3RD YEAR IT BATCH 23-27": [
+    //       [12023052004004, 4, "DEBAYAN DE"],
+    //       [12023052004020, 20, "PRAROOP ANAND"],
+    //       [12023052004036, 36, "KARTIK TULSIAN"],
+    //       [12023052004052, 52, "ESHITA TALUKDAR"],
+    //       [12023052004068, 68, "ABHIJEET KUMAR"],
+    //     ],
+    //     "4TH YEAR IT BATCH 22-26": [
+    //       [12022002004009, 5, "SOMBIT BISWAS"],
+    //       [12022002004036, 24, "SHIVAM  KUMAR"],
+    //       [12022002004057, 43, "DEBARATI  NANDI"],
+    //       [12022002004077, 62, "ARNAB  NAYAK"]
+    //     ],
+    //   },
+    // },
     {
       id: "as-1",
-      title: "Prof. Subhabrata Sengupta",
-      desg: "Assistant Professor",
-      linkedin: "https://www.linkedin.com/in/subhabrata-sengupta-97308526b/",
-      gscholar:
-        "https://scholar.google.co.in/citations?hl=en&user=uctyfpEAAAAJ",
-      img: "/images/teachers/ssg.png",
-      mentees: {
-        "2ND YEAR IT BATCH 23-27": [
-          [12023052004004, 4, "DEBAYAN DE"],
-          [12023052004020, 20, "PRAROOP ANAND"],
-          [12023052004036, 36, "KARTIK TULSIAN"],
-          [12023052004052, 52, "ESHITA TALUKDAR"],
-          [12023052004068, 68, "ABHIJEET KUMAR"],
-        ],
-        "3RD YEAR IT BATCH 22-26": [
-          [12022002004009, 5, "SOMBIT BISWAS"],
-          [12022002004036, 24, "SHIVAM  KUMAR"],
-          [12022002004057, 43, "DEBARATI  NANDI"],
-          [12022002004077, 62, "ARNAB  NAYAK"]
-        ],
-        "4TH YEAR IT BATCH 21-25": [
-          [12021002004014, 7, "SOURIK BHUIYA"],
-          [12021002004053, 25, "ARCHISHMAN ADIKARY"],
-          [12021002004055, 27, "SAPTARSHI CHAKRABORTY"],
-          [22022002004003, 49, "SAYAN SAILA"],
-          [22022002004017, 63, "OHID HASSAIN SHA"],
-          [12021002013003, 77, "BRAHMARSHI SUTRADHAR"]
-        ]
-      },
-    },
-    {
-      id: "as-2",
       title: "Prof. Kajari Sur",
       desg: "Assistant Professor",
       linkedin: "https://www.linkedin.com/in/kajari-sur-98a97156/",
       gscholar: "Assistant Professor",
       img: "/images/teachers/kajori_sur.png",
       mentees: {
-        "2ND YEAR IT BATCH 23-27": [
+        "2ND YEAR IT BATCH 24-28": [
+          [12024053004004, 5, "ADRIJA CHAKRABORTY"],
+          [12024052004080, 22, "PRITAM SAHA"],
+          [12024052004037, 39, "SAHIB GHOSH"],
+          [12024052004059, 56, "SOUMILI SAMANTA"],
+          [12024052004070, 73, "ANKIT PAUL"],],
+        "3RD YEAR IT BATCH 23-27": [
           [12023052004005, 5, "DEEPAN PRAMANICK"],
           [12023052004021, 21, "RAUSHAN KUMAR"],
           [12023052004037, 37, "PIYUSH KUMAR"],
           [12023052004053, 53, "GAUTAM KUMAR"],
           [12023052004069, 69, "ARATRIKA DASGUPTA"],
         ],
-        "3RD YEAR IT BATCH 22-26": [
+        "4TH YEAR IT BATCH 22-26": [
           [12022002004010, 6, "SATISH CHANDRA JHA"],
           [12022002004015, 9, "KUNAL KRISHAN"],
           [12022002004037, 25, "VASKAR  GANGULY"],
           [12022002004058, 44, "PROTTUS  MANNA"],
           [12022002004078, 63, "SOUMYADIP  SAHOO"]
         ],
-        "4TH YEAR IT BATCH 21-25": [
-          [12021002004015, 8, "AMAN PANDEY"],
-          [12021002004044, 21, "RISHAV AGARWALLA"],
-          [12021002004056, 28, "ANISHA DAS"],
-          [22022002004004, 50, "SANCHARI KAR"],
-          [12021002003136, 78, "MD ARIF"]
-        ]
       },
     },
     {
-      id: "as-3",
-      title: "Prof. Avijit Bose",
+      id: "as-2",
+      title: "Prof. Dr. Avijit Bose",
       desg: "Assistant Professor",
       linkedin: "https://www.linkedin.com/in/avijit-bose-29328977/",
       gscholar:
         "https://scholar.google.co.in/citations?hl=en&user=FuTyJUgAAAAJ",
       img: "/images/teachers/avijit_bose.png",
       mentees: {
-        "2ND YEAR IT BATCH 23-27": [
+        "2ND YEAR IT BATCH 24-28": [
+          [12024053004005, 26, "AASHI BARNWAL"],
+          [12024052004021, 23, "AISHIKA DAS"],
+          [12024052064038, 40, "ANURAJ KUMAR SINGH"],
+          [12024052004054, 57, "DIPAM BHATTACHARYA"],
+          [12024052004171, 74, "ANKITA KUNDU"],],
+
+
+        "3RD YEAR IT BATCH 23-27": [
           [12023052004008, 8, "FALAK BHATI"],
           [12023052004024, 24, "SOUMIK DAS"],
           [12023052004040, 40, "SAHIL KUMAR"],
@@ -1064,22 +1075,16 @@ export const mentorsList = {
           [12022002004042, 29, "IPSITA DUTTA"],
           [12022002004050, 37, "MD TANZIL IMAM"],
         ],
-        "3RD YEAR IT BATCH 22-26": [
+        "4TH YEAR IT BATCH 22-26": [
           [12022002004016, 10, "ANARGHA  BHATTACHARJEE"],
           [12022002004042, 29, "IPSITA  DUTTA"],
           [12022002004062, 48, "AHANA  MUKHERJEE"],
           [12022002004050, 37, "MD  TANZILIMAM"]
         ],
-        "4TH YEAR IT BATCH 21-25": [
-          [12021002004027, 12, "ANIKET"],
-          [12021002004062, 34, "CHINMAY DEO"],
-          [22022002004009, 55, "MADHUSHREE BANIK"],
-          [22022002004001, 47, "MOUMITA BANKURA"]
-        ]
       },
     },
     {
-      id: "as-4",
+      id: "as-3",
       title: "Prof. Swagatam Basu",
       desg: "Assistant Professor",
       linkedin: "https://www.linkedin.com/in/swagatam-basu-61875bb6/",
@@ -1087,26 +1092,27 @@ export const mentorsList = {
         "https://scholar.google.co.in/citations?hl=en&user=ryUB9fMAAAAJ",
       img: "/images/teachers/swagatam_basu.png",
       mentees: {
-        "2ND YEAR IT BATCH 23-27": [
+        "2ND YEAR IT BATCH 24-28": [
+          [12024052004013, 14, "ABHRAJIT PAL"],
+          [12024052004029, 31, "SWASTIKA DAS"],
+          [12024052004046, 48, "SK SHADAAN"],
+          [12024052004062, 65, "ANKITA MAJEE"],],
+        "3RD YEAR IT BATCH 23-27": [
           [12023052004009, 9, "FALAK RAHMAN"],
           [12023052004025, 25, "ABHRAJIT SAMUI"],
           [12023052004041, 41, "SAKSHI GUPTA"],
           [12023052004057, 57, "SEFALI GUPTA"],
           [12023052004073, 73, "PRIYANSHU KUMAR"],
         ],
-        "3RD YEAR IT BATCH 22-26": [
+        "4TH YEAR IT BATCH 22-26": [
           [12022002004017, 11, "AGNIBH  CHANDA"],
           [12022002004043, 30, "SETU KUMAR"],
           [12022002004063, 49, "SUCHETA  SAHA"]
         ],
-        "4TH YEAR IT BATCH 21-25": [
-          [12021002004029, 13, "UJJWAL KUMAR"],
-          [12021002004063, 35, "ADITYA PRATAP SINGH"]
-        ]
       },
     },
     {
-      id: "as-5",
+      id: "as-4",
       title: "Prof. Rabi Narayan Behera",
       desg: "Assistant Professor",
       linkedin: "https://www.linkedin.com/in/rabi-behera-5b814154/",
@@ -1114,27 +1120,29 @@ export const mentorsList = {
         "https://scholar.google.co.in/citations?hl=en&user=j_FB-lYAAAAJ",
       img: "/images/teachers/ravi_behera.png",
       mentees: {
-        "2ND YEAR IT BATCH 23-27": [
+        "2ND YEAR IT BATCH 24-28": [
+          [12024053004015, 16, "SUBHOJIT CHANDRA"],
+          [12024052004031, 33, "SABIK CHAKRABORTY"],
+          [12024052004048, 50, "SATTWIKA HAJRA"],
+          [12024052064064, 67, "SNEHA ROY"],],
+
+
+        "3RD YEAR IT BATCH 23-27": [
           [12023052004010, 10, "HANS VATS"],
           [12023052004026, 26, "ADITYA SINGH"],
           [12023052004042, 42, "SHAIKH MOHAMMED ASIF AHMAD"],
           [12023052004058, 58, "SHREYA SANTOSH"],
           [12023052004074, 74, "SACHIN YADAV"],
         ],
-        "3RD YEAR IT BATCH 22-26": [
+        "4TH YEAR IT BATCH 22-26": [
           [12022002004044, 31, "SOURAV BHOWAL"],
           [12022002004018, 12, "MRIDUL PATRA"],
           [12022002004064, 50, "SHESADRI MUKHERJEE"]
         ],
-        "4TH YEAR IT BATCH 21-25": [
-          [12021002004030, 14, "BISWAJIT ADHIKARY"],
-          [12021002004064, 36, "SHUVRO BROTHA BISWAS"],
-          [22022002004011, 57, "ADARSH KUMAR"]
-        ]
       },
     },
     {
-      id: "as-6",
+      id: "as-5",
       title: "Prof. Dr. Amit Kumar Mandal",
       desg: "Assistant Professor",
       linkedin: "",
@@ -1142,22 +1150,16 @@ export const mentorsList = {
         "",
       img: "/images/teachers/amit_kumar.png",
       mentees: {
-        "3RD YEAR IT BATCH 22-26": [
+        "2ND YEAR IT BATCH 24-28": [[12024052004048, 50, "SATTWIKA HAJRA"]],
+        "4TH YEAR IT BATCH 22-26": [
           [12022002004019, 13, "ADITYA JAISWAL"],
           [12022002004045, 32, "KALLOL BHATTACHARYYA"],
           [12022002004065, 51, "SEFALI SRIVASTAVA"]
         ],
-        "4TH YEAR IT BATCH 21-25": [
-          [12021002004033, 15, "SRIJAN SEN"],
-          [12021002004065, 37, "SHOUROV SIKDER"],
-          [22022002004012, 58, "MOUSAM BACHHAR"],
-          [22022002004019, 65, "TANVIR ALAM"],
-          [22022002004023, 69, "ABHIK HALDER"]
-        ]
       }
     },
     {
-      id: "as-7",
+      id: "as-6",
       title: "Prof. Dr. Avipsita Chatterjee",
       desg: "Assistant Professor",
       linkedin: "https://www.linkedin.com/in/dr-avipsita-chatterjee-630b35323/",
@@ -1165,29 +1167,27 @@ export const mentorsList = {
         "https://scholar.google.co.in/citations?hl=en&user=97vaiDQAAAAJ",
       img: "/images/teachers/avipsita_chat.png",
       mentees: {
-        "2ND YEAR IT BATCH 23-27": [
+        "2ND YEAR IT BATCH 24-28": [
+          [12024052004009, 10, "ARGHYA BANERJEE"],
+          [12024053004025, 27, "ANURAG PATWARI"],
+          [12024052004042, 44, "DEBDATTA ROYCHOUDHURY"],
+          [12024052004058, 61, "NIDHI MOHAJAN"],],
+        "3RD YEAR IT BATCH 23-27": [
           [12023052004010, 10, "HANS VATS"],
           [12023052004026, 26, "ADITYA SINGH"],
           [12023052004042, 42, "SHAIKH MOHAMMED ASIF AHMAD"],
           [12023052004058, 58, "SHREYA SANTOSH"],
           [12023052004074, 74, "SACHIN YADAV"],
         ],
-        "3RD YEAR IT BATCH 22-26": [
+        "4TH YEAR IT BATCH 22-26": [
           [12022002004019, 13, "ADITYA JAISWAL"],
           [12022002004045, 32, "KALLOL BHATTACHARYYA"],
           [12022002004065, 51, "SEFALI SRIVASTAVA"]
         ],
-        "4TH YEAR IT BATCH 21-25": [
-          [12021002004033, 15, "SRIJAN SEN"],
-          [12021002004065, 37, "SHOUROV SIKDER"],
-          [22022002004012, 58, "MOUSAM BACHHAR"],
-          [22022002004019, 65, "TANVIR ALAM"],
-          [22022002004023, 69, "ABHIK HALDER"]
-        ]
       },
     },
     {
-      id: "as-8",
+      id: "as-7",
       title: "Prof Pulak Baral",
       desg: "Assistant Professor",
       linkedin: "https://www.linkedin.com/in/pulak-baral-249aaa27b/",
@@ -1195,80 +1195,83 @@ export const mentorsList = {
         "https://scholar.google.co.in/citations?hl=en&user=Gqpa3HUAAAAJ",
       img: "/images/teachers/pulak_baral.png",
       mentees: {
-        "2ND YEAR IT BATCH 23-27": [
+        "2ND YEAR IT BATCH 24-28": [
+          [12024052064016, 17, "ARNAB CHAKRABORTY"],
+          [12024052004032, 34, "SAMRIDDHA DATTA"],
+          [12024052004079, 51, "TANISHA ADHIKARI"],
+          [12024052004065, 68, "ADITYA SUMAN"],],
+
+
+        "3RD YEAR IT BATCH 23-27": [
           [12023052004015, 15, "MOHIT SHAW"],
           [12023052004031, 31, "AMIYA MISHU"],
           [12023052004047, 47, "KHUSHI SONI"],
           [12023052004063, 63, "SRISTY CHOWDHURY"],
           [12023052004079, 79, "SUPRATIK JANA"],
         ],
-        "3RD YEAR IT BATCH 22-26": [
+        "4TH YEAR IT BATCH 22-26": [
           [12022002004025, 18, "SAMANKA NAYAK"],
           [12022002004022, 15, "SASWATA PAUL"],
           [12022002004061, 47, "DIPANJAN NATH"],
           [12022002004047, 34, "DIBAKAR  KUNDU"],
           [12022002004067, 53, "ARCHISMAN  JHA"],
         ],
-        "4TH YEAR IT BATCH 21-25": [
-          [12021002004035, 17, "ABHIPRIYA RAJAN"],
-          [12021002004067, 39, "NIKITA ANAND"],
-          [22022002004014, 60, "DEBJIT MAHATO"],
-          [22022002004021, 67, "RUPA KUMARI"]
-        ]
       },
     },
     {
-      id: "as-9",
+      id: "as-8",
       title: "Prof. Subindu Saha",
       desg: "Assistant Professor",
       linkedin: "https://www.linkedin.com/in/subindu-saha-506b697a/",
       gscholar: "Assistant Professor",
       img: "/images/teachers/subindu_saha.jpg",
       mentees: {
-        "2ND YEAR IT BATCH 23-27": [
+        "2ND YEAR IT BATCH 24-28": [
+          [12024052064017, 18, "MAYANK ROY"],
+          [12024052004033, 35, "PRANJAL PANKAJ GUPTA"],
+          [12024052004049, 51, "NILADRI MAITI"]
+          , [12024052004066, 69, "RIDDHI BANERJEE"],],
+
+
+        "3RD YEAR IT BATCH 23-27": [
           [12023052004014, 14, "KHANDAKAR HOSSAIN"],
           [12023052004030, 30, "ANUSHKA MAITY"],
           [12023052004046, 46, "KUMAR ARUNAV"],
           [12023052004062, 62, "SOUVIK CHEL"],
           [12023052004078, 78, "SPARSH SRIVASTAVA"],
         ],
-        "3RD YEAR IT BATCH 22-26": [
+        "4TH YEAR IT BATCH 22-26": [
           [12022002004021, 14, "PRIYA BHARTI"],
           [12022002004046, 33, "SAMPURNA  GHARA"],
           [12022002004064, 50, "SHESADRI MUKHERJEE"],
           [12022002004066, 52, "KUNAL  BODHAK"],
           [12022002004074, 60, "SOURAJ  CHATTERJEE"]
         ],
-        "4TH YEAR IT BATCH 21-25": [
-          [12021002004034, 16, "SAURAV KUMAR NAYAK"],
-          [12021002004066, 38, "RAHUL DUTTA"],
-          [22022002004013, 59, "ROSHNI SINGH"],
-          [22022002004020, 66, "DEBAYAN GOSWAMI"]
-        ]
       },
     },
     {
-      id: "as-10",
+      id: "as-9",
       title: "Prof. Partha Sarathi Paul",
       desg: "IT Professor",
       linkedin: "https://www.linkedin.com/in/partha-sarathi-paul-58a929325/",
       gscholar: "Mohua Ghosh",
       img: "/images/teachers/partha_sarthi.png",
       mentees: {
-        "3RD YEAR IT BATCH 22-26": [
+        "2ND YEAR IT BATCH 24-28": [
+          [12024052004014, 15, "SUBHAYONI CHANDRA"],
+          [1202405201040030, 32, "TANMAY SINGHA"],
+          [12024053004047, 49, "BISWAJIT KUNDU"],
+          [12024053004063, 66, "MD ARMAN ALI"],],
+        "4TH YEAR IT BATCH 22-26": [
           [12022002004041, 28, "SNEHASHIS PATI"],
           [12022002004015, 9, "KUNAL KRISHAN"],
           [12022002004061, 47, "DIPANJAN NATH"]
         ],
-        "4TH YEAR IT BATCH 21-25": [
-          [12021002004025, 11, "DHARMESH KUMAR BHARTI"],
-          [12021002004061, 33, "SAYANTI DEY"],
-          [22022002004008, 54, "SRIJON PRASAD BANERJEE"]
-        ]
       }
     },
   ],
 };
+
 
 export const itfaculty = {
   hod: [
@@ -1350,16 +1353,16 @@ export const itfaculty = {
     },
   ],
   assi_prof: [
+    // {
+    //   id: "as-1",
+    //   title: "Prof. Dr. Subhabrata Sengupta",
+    //   desg: "Assistant Professor",
+    //   linkedin: "https://www.linkedin.com/in/subhabrata-sengupta-97308526b/",
+    //   gscholar: "https://scholar.google.co.in/citations?hl=en&user=uctyfpEAAAAJ",
+    //   img: "/images/teachers/ssg.png",
+    // },
     {
       id: "as-1",
-      title: "Prof. Subhabrata Sengupta",
-      desg: "Assistant Professor",
-      linkedin: "https://www.linkedin.com/in/subhabrata-sengupta-97308526b/",
-      gscholar: "https://scholar.google.co.in/citations?hl=en&user=uctyfpEAAAAJ",
-      img: "/images/teachers/ssg.png",
-    },
-    {
-      id: "as-2",
       title: "Prof. Kajari Sur",
       desg: "Assistant Professor",
       linkedin: "https://www.linkedin.com/in/kajari-sur-98a97156/",
@@ -1367,15 +1370,15 @@ export const itfaculty = {
       img: "/images/teachers/kajori_sur.png",
     },
     {
-      id: "as-3",
-      title: "Prof. Avijit Bose",
+      id: "as-2",
+      title: "Prof. Dr. Avijit Bose",
       desg: "Assistant Professor",
       linkedin: "https://www.linkedin.com/in/avijit-bose-29328977/",
       gscholar: "https://scholar.google.co.in/citations?hl=en&user=FuTyJUgAAAAJ",
       img: "/images/teachers/avijit_bose.png",
     },
     {
-      id: "as-4",
+      id: "as-3",
       title: "Prof. Swagatam Basu",
       desg: "Assistant Professor",
       linkedin: "https://www.linkedin.com/in/swagatam-basu-61875bb6/",
@@ -1383,7 +1386,7 @@ export const itfaculty = {
       img: "/images/teachers/swagatam_basu.png",
     },
     {
-      id: "as-5",
+      id: "as-4",
       title: "Prof. Rabi Narayan Behera",
       desg: "Assistant Professor",
       linkedin: "https://www.linkedin.com/in/rabi-behera-5b814154/",
@@ -1391,7 +1394,7 @@ export const itfaculty = {
       img: "/images/teachers/ravi_behera.png",
     },
     {
-      id: "as-6",
+      id: "as-5",
       title: "Prof. Dr. Amit Kumar Mandal",
       desg: "Assistant Professor",
       linkedin: "",
@@ -1399,7 +1402,7 @@ export const itfaculty = {
       img: "/images/teachers/amit_kumar.png",
     },
     {
-      id: "as-7",
+      id: "as-6",
       title: "Prof. Dr. Avipsita Chatterjee",
       desg: "Assistant Professor",
       linkedin: "https://www.linkedin.com/in/dr-avipsita-chatterjee-630b35323/",
@@ -1407,7 +1410,7 @@ export const itfaculty = {
       img: "/images/teachers/avipsita_chat.png",
     },
     {
-      id: "as-8",
+      id: "as-7",
       title: "Prof Pulak Baral",
       desg: "Assistant Professor",
       linkedin: "https://www.linkedin.com/in/pulak-baral-249aaa27b/",
@@ -1415,7 +1418,7 @@ export const itfaculty = {
       img: "/images/teachers/pulak_baral.png",
     },
     {
-      id: "as-9",
+      id: "as-8",
       title: "Prof. Subindu Saha",
       desg: "Assistant Professor",
       linkedin: "https://www.linkedin.com/in/subindu-saha-506b697a/",
@@ -1423,7 +1426,7 @@ export const itfaculty = {
       img: "/images/teachers/subindu_saha.jpg",
     },
     {
-      id: "as-10",
+      id: "as-9",
       title: "Prof. Partha Sarathi Paul",
       desg: "Assistant Professor",
       linkedin: "https://www.linkedin.com/in/partha-sarathi-paul-58a929325/",
@@ -1431,7 +1434,7 @@ export const itfaculty = {
       img: "/images/teachers/partha_sarthi.png",
     },
     {
-      id: "as-11",
+      id: "as-10",
       title: "Prof. Mohua Ghosh",
       desg: "Assistant Professor",
       linkedin: "https://www.linkedin.com/in/sudipta-bhuyan-076764229/",
@@ -1439,7 +1442,7 @@ export const itfaculty = {
       img: "/images/teachers/mohua_ghosh.png",
     },
     {
-      id: "as-12",
+      id: "as-11",
       title: "Prof. Shreyashi Dutta",
       desg: "Assistant Professor",
       linkedin: "https://www.linkedin.com/in/shreyasi-datta-475b1599/",
@@ -1447,7 +1450,7 @@ export const itfaculty = {
       img: "/images/teachers/shreyashi_dutta.jpeg",
     },
     {
-      id: "as-13",
+      id: "as-12",
       title: "Prof. Partha Bhattacharya",
       desg: "Assistant Professor",
       linkedin: "",
@@ -1455,7 +1458,7 @@ export const itfaculty = {
       img: "/images/teachers/partha_bhata.png",
     },
     {
-      id: "as-14",
+      id: "as-13",
       title: "Prof. Aditya Ray",
       desg: "Assistant Professor",
       linkedin: "",
