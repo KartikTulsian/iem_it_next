@@ -210,10 +210,6 @@ function CategoryIcon({ name, color }: { name: string; color: string }) {
   );
 }
 
-/* ------------------------------------------------------------------ */
-/*  Page                                                                */
-/* ------------------------------------------------------------------ */
-
 export default function InfrastructureCard() {
   return (
     <section
