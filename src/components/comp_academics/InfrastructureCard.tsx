@@ -3,9 +3,6 @@
 import React from "react";
 import Image from "next/image";
 
-/* ------------------------------------------------------------------ */
-/*  Design tokens (kept local so this file stays drop-in)              */
-/* ------------------------------------------------------------------ */
 const paper = "#C9DBED";
 const line = "#E7E1D3";
 const ink = "#20262F";
@@ -89,10 +86,6 @@ const stats = [
 ];
 
 const totalLabs = labCategories.reduce((n, c) => n + c.labs.length, 0);
-
-/* ------------------------------------------------------------------ */
-/*  Small building blocks                                              */
-/* ------------------------------------------------------------------ */
 
 function Overline({ children }: { children: React.ReactNode }) {
   return (
